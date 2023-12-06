@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/* For the body, I set the margin and padding to 0 so the default spacing is out. */
+/* Also, background-size is cover so the entire website is covered while maintaining its aspect ratio. */
+body {
+  margin: 0;
+  padding: 0; 
+  background: url(images/background.png);
+  background-size: cover;
+  height: 100vh;
+}
+
+
+/* Boxes and mainly for home page */
+
+
+/* For the box, I set width and padding for a nice rectangle box. */
+/* Text-align is center for nice layout. */
+/* Margin is auto so that everything spaces out clean and equal */
+/* Margin-top and Margin-bottom is used for even spaces. */
+/* Color is used to set text white. */
+.box {
+  width: 500px;
+  background: rgba(230, 192, 192, 0.4);
+  padding: 60px;
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 10%;
+}
+
+/* Border-radius is used for a curved square type shape pfp. */
+.box-img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.box h1 {
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+.box h5 {
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.box p {
+  text-align: justify;
+  font-weight: 500;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Display is inline-block so my icons are in the same row and I can change their sizes. */
+/* list-style is used to remove the bullets. */
+.box li {
+  display: inline-block;
+  margin: 6px;
+  list-style: none;
+}
+
+/* The transition is used for the hover effect to be smooth. */
+.box li a {
+  color: white;
+  text-decoration: underline;
+  font-size: 60px;
+  transition: all ease-in-out 250ms;
+}
+
+.box li a:hover {
+  color: #c9c9c9;
+}
+
+
+/* Navbar */
+
+
+header {
+  box-sizing: border-box;
+  margin: 0;
+  background-color: rgb(104, 104, 104);
+  padding: 30px 10%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+nav li, a, button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(222, 222, 44);
+  text-decoration: none;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: #0088a9;
+}
+
+nav button {
+  padding: 9px 25px;
+  background-color: rgb(189, 168, 2);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+nav button:hover {
+  background-color: rgba(38, 163, 0, 0.8);
+}
+
+
+/* About Page */
+
+
+.aboutIntroduction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  margin-top: 50px;
+  margin: 50px auto; /* Center the container and add margin at the top */
+}
+
+.aboutIntroductionImgElement {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-left: 50px;
+}
+
+.aboutIntroductionText {
+  flex: 1; /* Allow the text to take up remaining space */
+  margin-left: 50px; /* Add margin for spacing between text and image */
+}
+
+.aboutHobbies {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  margin-top: 50px;
+  margin: 50px auto; /* Center the container and add margin at the top */
+}
+
+.aboutHobbiesImgElement {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-left: 50px;
+}
+
+.aboutHobbiesText {
+  flex: 1; /* Allow the text to take up remaining space */
+  margin-left: 50px; /* Add margin for spacing between text and image */
+}
+
+.aboutHobbiesList {
+  text-decoration: underline;
+}
+
+
+/* Projects Page */
+
+
+.projectsIntroduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  margin-top: 50px;
+  margin: 50px auto; /* Center the container and add margin at the top */
+}
+
+.projectsIntroductionImgElement {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.projectsIntroductionText {
+  flex: 1; /* Allow the text to take up remaining space */
+}
+
+.projectsBoxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  margin-top: 50px;
+  margin: 50px auto; /* Center the container and add margin at the top */
+}
+
+.projectsBoxesImages {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-left: 50px;
+}
+
+.projectsBoxesText {
+  flex: 1; /* Allow the text to take up remaining space */
+  margin-left: 50px; /* Add margin for spacing between text and image */
+}
